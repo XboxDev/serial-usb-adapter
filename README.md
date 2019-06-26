@@ -40,8 +40,8 @@ Bold designators are the bare minimum required for basic functionality but stabi
 
 | Count | Part/Value | Description | Designators | Notes |
 | - | - | - | - | - |
-| 1  | 2x8 2.45mm | Pin Header | **JP1** | |
-| 1  | 1x3 2.45mm | Pin Header | J2 | |
+| 1  | 2x8 2.54mm | Pin Header | **JP1** | |
+| 1  | 1x3 2.54mm | Pin Header | J2 | |
 | 1  | USB Mini-B SMD | 5-pin Female Connector  | **J1** | |
 | 1  | SG5032CAN | 14.318MHz 5032 Crystal Oscillator | **Y1** | |
 | 1  | LPC47M192 | SuperIO | **U1** | The LPC47M157 is also compatible |
