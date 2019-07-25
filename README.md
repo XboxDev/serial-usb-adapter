@@ -47,7 +47,7 @@ Bold designators are the bare minimum required for basic functionality but stabi
 | 1  | LPC47M192 | SuperIO | **U1** | The LPC47M157 is also compatible |
 | 1  | FT231XS | UART to USB | **U2** | |
 | 2  | 27R | 0603 SMD Resistor | **R1**, **R3** | Filtering |
-| 1  | 480R | 0603 SMD Resistor | R5 | LED power dissipation |
+| 1  | 470R | 0603 SMD Resistor | R5 | LED power dissipation |
 | 1  | 1.2k | 0603 SMD Resistor | R6 | LED power dissipation  |
 | 2  | 10k | 0603 SMD Resistor | **R2**, **R4** | Configuration pull-ups/downs |
 | 1  | 33 Ohm | 0603 Ferrite Bead | **FB1** | Filtering, can be substituted with a 0 ohm resistor or solder bridge |
@@ -63,7 +63,7 @@ Bold designators are the bare minimum required for basic functionality but stabi
 
 | Count | Part/Value | Description | Designators | Notes |
 | - | - | - | - | - |
-| 1 | 2x8 2.45mm | Pin Header | N/A | Retail Xbox LPC Connector |
+| 1 | 2x8 2.54mm | Pin Header | N/A | Retail Xbox LPC Connector |
 | 1 | 16 Wire 2.54mm | Female to Female IDC Ribbon Cable | N/A | Keep length under 18 inches for best results |
 | 1 | Mini USB Cable | Cable | N/A | |
 
