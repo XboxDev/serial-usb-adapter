@@ -11,7 +11,7 @@ This device allows for serial communication with an original Xbox and is primari
 
 ##### Hardware
 
-Any original Xbox version 1.0 through 1.2 motherboard.
+Any original Xbox of any version (although versions 1.3-1.5 require LFRAME# reconnect and version 1.6 requires full LPC port rebuild, including LFRAME#).
 Debug and development kits will work without modification, however, retail boxes need to use a hacked kernel (X2 5035 or iND 5004 for example) that initializes superio as well as have a 2x8 2.54mm pin header soldered to the LPC port.
 
 ##### Software
@@ -22,7 +22,7 @@ A Windows OS capable of running WinDbg; versions 4.0.0018.0 (XDK) or [6.12.0002.
 
 ### Usage
 
-Connect a mini USB cable from your PC to the serial adapter, then the IDC cable ends into the serial adapter and Xbox LPC port pin headers respectively, ensuring the correct alignment and orientation as shown in the image above. **Incorrect orientation may result in damage to the adapter and/or your Xbox, you have been warned!**
+Connect a micro USB cable from your PC to the serial adapter, then the IDC cable ends into the serial adapter and Xbox LPC port pin headers respectively, ensuring the correct alignment and orientation as shown in the image above. **Incorrect orientation may result in damage to the adapter and/or your Xbox, you have been warned!**
 
 Within WinDbg press `CTRL+K` to bring up the connection dialog and enter `115200` for the baud rate along with the `COM#` port as detected by your computer in device manager.
 
@@ -41,8 +41,9 @@ Bold designators are the bare minimum required for basic functionality but stabi
 | Count | Part/Value | Description | Designators | Notes |
 | - | - | - | - | - |
 | 1  | 2x8 2.54mm | Pin Header | **JP1** | |
-| 1  | 1x3 2.54mm | Pin Header | J2 | |
-| 1  | USB Mini-B SMD | 5-pin Female Connector  | **J1** | |
+| 1  | 1x4 2.54mm | Pin Header | J2 | |
+| 1  | 1x2 2.54mm | Pin Header | J3 | |
+| 1  | Wuerth_629105150521 | USB Micro-B Connector  | **J1** | |
 | 1  | SG5032CAN | 14.318MHz 5032 Crystal Oscillator | **Y1** | |
 | 1  | LPC47M192 | SuperIO | **U1** | The LPC47M157 is also compatible |
 | 1  | FT231XS | UART to USB | **U2** | |
@@ -65,7 +66,7 @@ Bold designators are the bare minimum required for basic functionality but stabi
 | - | - | - | - | - |
 | 1 | 2x8 2.54mm | Pin Header | N/A | Retail Xbox LPC Connector |
 | 1 | 16 Wire 2.54mm | Female to Female IDC Ribbon Cable | N/A | Keep length under 18 inches for best results |
-| 1 | Mini USB Cable | Cable | N/A | |
+| 1 | Micro USB Cable | Cable | N/A | |
 
 ### Retailers
 
