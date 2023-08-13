@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name serial-usb-adapter)(type Legacy)(uri ${KIPRJMOD}/libraries/serial-usb-adapter.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "serial-usb-adapter")(type "KiCad")(uri "${KIPRJMOD}/libraries/serial-usb-adapter.kicad_sym")(options "")(descr ""))
 )
