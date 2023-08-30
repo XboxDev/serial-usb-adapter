@@ -11,13 +11,21 @@ For questions or support, contact xbox7887 in the [XboxDev on Discord](https://d
 ### Hardware
 
 Any original Xbox of any version (although versions 1.3-1.5 require LFRAME# reconnect and version 1.6 requires full LPC port rebuild, including LFRAME#).
-Debug and development kits will work without modification, however, retail boxes need to use a hacked kernel (X2 5035 or iND 5004 for example) that initializes superio as well as have a 2x8 2.54mm pin header soldered to the LPC port.
+Debug and development kits will work without modification, however, retail boxes need to use a hacked kernel (X2 5035 or Cerbios for example) that initializes superio as well as have a 2x8 2.54mm pin header soldered to the LPC port.
 
 ### Software
 
 A Windows OS capable of running WinDbg; versions 4.0.0018.0 (XDK) or [6.12.0002.633](http://download.microsoft.com/download/A/6/A/A6AC035D-DA3F-4F0C-ADA4-37C8E5D34E3D/setup/WinSDKDebuggingTools/dbg_x86.msi) have been tested successfully.
 
 Optionally, [KiCad 7.0](http://kicad-pcb.org/download/) if you need to work with the PCB project files.
+
+### BIOS Compatibility
+
+   - Cerbios - use on any board
+   - X2 4979 BFM - use on any board
+   - X2 4981 (256 KB) - use on 1.2+ boards
+   - X2 4983 BFM - use on any board
+   - X2 5035 (512 KB) - use on 1.0-1.1 boards
 
 ## Usage
 
